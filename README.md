@@ -19,9 +19,9 @@ pip install phiskills.grpc
 ```python
 from phiskills.grpc import Api
 
-api = Api('My API', max_workers=...)
-# Register your gRPC server with api.server
-api.start(grace=...)
+api = Api('My API')
+xxx.add_XxxServicer_to_server(XxxServicer(), api.server)
+api.start()
 ```
 For more details, see [gRPC Basics - Python: Creating the server][10].
 

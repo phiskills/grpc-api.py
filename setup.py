@@ -8,7 +8,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='phiskills.grpc',  # Required
-    version='0.0.0',  # Required
+    version='0.0.1',  # Required
     description='Phi Skills Generic gRPC API Server',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional
@@ -26,7 +26,7 @@ setup(
     keywords='Phi Skills gRPC API Server',  # Optional
     packages=find_namespace_packages(include=['phiskills.*']),  # Required
     python_requires='>=3.8, <4',
-    install_requires=['grpcio'],  # Optional
+    install_requires=['grpcio', 'grpcio-health-checking'],  # Optional
     project_urls={  # Optional
         'Company website': 'https://phiskills.com',
         'Documentation': 'https://github.com/phiskills/grpc-api.py',
